@@ -255,8 +255,6 @@ function ef_endnotes_collapse_field_cb() {
 
 	echo "<label for='endnotes_collapse'><input name='_ef_endnotes_settings[endnotes_collapse]' id='endnotes_collapse' '" . checked( $checked, 1, false ) . "' type='checkbox' />'" . __( 'Collapse endnotes until clicked', 'endnotes' ) . "'</label>";
 
-	}
-
 }
 
 /*-----------------------------------------------------------------------------------*/
