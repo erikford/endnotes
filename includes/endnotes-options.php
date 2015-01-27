@@ -221,7 +221,7 @@ function ef_endnotes_template_field_cb() {
 
 	$checked = $options['endnotes_templates'];
 
-	echo "<label for='endnotes_templates'><input name='_ef_endnotes_settings[endnotes_templates]' id='endnotes_template' '" . checked( $checked, 1, false ) . "' type='checkbox' />'" . __( 'Only display endnotes on single post or page', 'endnotes' ) . "'</label>";
+	echo "<label for='endnotes_templates'><input name='_ef_endnotes_settings[endnotes_templates]' id='endnotes_template' value='1' '" . checked( $checked, 1, false ) . "' type='checkbox' />" . __( 'Only display endnotes on single post or page', 'endnotes' ) . "</label>";
 
 }
 
@@ -253,7 +253,7 @@ function ef_endnotes_collapse_field_cb() {
 
 	$checked = $options['endnotes_collapse'];
 
-	echo "<label for='endnotes_collapse'><input name='_ef_endnotes_settings[endnotes_collapse]' id='endnotes_collapse' '" . checked( $checked, 1, false ) . "' type='checkbox' />'" . __( 'Collapse endnotes until clicked', 'endnotes' ) . "'</label>";
+	echo "<label for='endnotes_collapse'><input name='_ef_endnotes_settings[endnotes_collapse]' id='endnotes_collapse' value='1' '" . checked( $checked, 1, false ) . "' type='checkbox' />" . __( 'Collapse endnotes until clicked', 'endnotes' ) . "</label>";
 
 }
 

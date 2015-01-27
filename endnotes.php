@@ -57,7 +57,7 @@ add_action( 'wp_enqueue_scripts', 'ef_endnotes_scripts' );
 
 function ef_endnotes_scripts() {
 
-	$options  = get_options( '_ef_endnotes_settings' );
+	$options  = get_option( '_ef_endnotes_settings' );
 	$collapse = ( isset( $options['endnotes_collapse'] ) ) ? $options['endnotes_collapse'] : '';
 
 	if ( !is_admin() && $collapse ) {

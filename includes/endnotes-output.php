@@ -15,11 +15,12 @@ add_action( 'the_content', 'ef_endnotes_output', 1 );
 
 function ef_endnotes_output( $content ) {
 
-	$options    = get_options( '_ef_endnotes_settings' );
+	$options    = get_option( '_ef_endnotes_settings' );
 	$header     = ( isset( $options['endnotes_header'] ) ) ? $options['endnotes_header'] : '';
 	$single     = ( isset( $options['endnotes_template'] ) ) ? $options['endnotes_template'] : '';
 	$collapse   = ( isset( $options['endnotes_collapse'] ) ) ? $options['endnotes_collapse'] : '';
 	$linksingle = false;
+	$singleurl  = '';
 
 	if ( !is_page() && !is_single() && $single ) $linksingle = true;
 
