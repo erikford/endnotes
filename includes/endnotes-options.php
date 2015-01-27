@@ -223,8 +223,6 @@ function ef_endnotes_template_field_cb() {
 
 	echo "<label for='endnotes_templates'><input name='_ef_endnotes_settings[endnotes_templates]' id='endnotes_template' '" . checked( $checked, 1, false ) . "' type='checkbox' />'" . __( 'Only display endnotes on single post or page', 'endnotes' ) . "'</label>";
 
-	}
-
 }
 
 /*-----------------------------------------------------------------------------------*/
