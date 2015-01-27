@@ -34,8 +34,8 @@ define( 'ENDNOTES_VERSION', '1.0.0' );
 /* Includes
 /*-----------------------------------------------------------------------------------*/
 
-include( ENDNOTES . 'includes/endnotes-options.php' ); // load plugin settings
-include( ENDNOTES . 'includes/endnotes-output.php' ); // load plugin output
+include( ENDNOTES_DIR . 'includes/endnotes-options.php' ); // load plugin settings
+include( ENDNOTES_DIR . 'includes/endnotes-output.php' ); // load plugin output
 
 /*-----------------------------------------------------------------------------------*/
 /* Endnotes Scripts
